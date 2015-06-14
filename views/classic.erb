@@ -1,5 +1,20 @@
 <html>
 
-hello world
+<head>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+
+<body>
+  <div class="team" id="team1">
+    <% for @player in @team1 %>
+      <%= erb :player %>
+    <% end %>
+  </div>
+  <div class="team" id="team2">
+    <% for @player in @team2 %>
+      <%= erb :player %>
+    <% end %>
+  </div>
+</body>
 
 </html>
